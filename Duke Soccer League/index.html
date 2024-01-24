@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <style>
+
+        .center{
+            text-align: center ;
+        }
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .player, .administrator {
+            background-color: #fff;
+            width: 250px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+            color: #545454;
+        }
+
+        h2 {
+            color: #727272;
+        }
+
+        h2:hover {
+            color: #1a1a1a;
+        }
+
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center">Duke Soccer League</h1>
+    <div class="container">
+        <div class="player">
+            <h2>Player</h2>
+            <a href="#">
+                <ul type="circle">
+                    <li>
+                        <a href="player.html">List All Available Player</a>
+                    </li>
+                    <li>
+                        <a href="register.html">Register for a Player</a>       
+                    </li>
+                </ul>
+            </a>
+        </div>
+        <div class="administrator">
+            <h2>Administrator</h2>
+            <a href="#">
+                <ul type="circle">
+                    <li>
+                        <a href="adminaddplayer.html">Add a player</a>
+                    </li>
+                    <li>
+                        <a href="addNewLeague.html">Add a soccer league</a>       
+                    </li>
+                </ul>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

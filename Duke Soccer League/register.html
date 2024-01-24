@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League and Year Form</title>
+    <!-- Include the Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+
+    <div class="max-w-md mx-auto bg-white rounded p-8 shadow-md">
+        <h2 class="text-2xl font-bold mb-6">Register a player</h2>
+        <form>
+            <div class="mb-4">
+                <label for="league" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                <input type="text" id="league" name="league" class="border-2 border-gray-300 p-2 w-full" placeholder="Enter the league name" minlength="5" maxlength="10">
+            </div>
+
+            <div class="mb-4">
+                <label for="year" class="block text-gray-700 text-sm font-bold mb-2">League:</label>
+                <!-- <input type="text" id="year" name="year" class="border-2 border-gray-300 p-2 w-full" placeholder="Enter the year"> -->
+                <select name="year" id="year" class="border-2 border-gray-300 p-2 w-full">
+                    <option value="None">Select an option</option>
+                    <option value="Season 1">Season 1</option>
+                    <option value="Season 2">Season 2</option>
+                    <option value="Season 3">Season 3</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label for="year" class="block text-gray-700 text-sm font-bold mb-2">Year:</label>
+                <input type="text" id="year" name="year" class="border-2 border-gray-300 p-2 w-full" placeholder="Enter the year">
+            </div>
+
+            <div class="center">
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Submit</button>
+            </div>
+        </form>
+        <!-- End League and Year Form -->
+    </div>
+
+</body>
+</html>
